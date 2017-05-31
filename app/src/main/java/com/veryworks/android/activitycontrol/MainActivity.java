@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-                                                                     // 결과값이 담겨온다.
-        //super.onActivityResult(requestCode, resultCode, data);
+
         Toast.makeText(this, "Result Code="+resultCode, Toast.LENGTH_SHORT).show();
 
         if(resultCode == RESULT_OK) {
@@ -62,7 +61,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                  // Intent 인 data에서 result 변수로 값을 꺼내는데
                                  // 값이 없을경우 디폴트값으로 0 을 사용한다.
                     int result = data.getIntExtra("result",0);
-
                     editText.setText("결과값="+result);
                     break;
                 case BUTTON_START:

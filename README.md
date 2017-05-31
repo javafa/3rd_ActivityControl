@@ -3,8 +3,7 @@ startActivityForResult - Activity 사이에서 값 주고받기
 
 ## startActivityForResult
 
-이 함수로 Activity를 실행하면 실행된 Activity가 종료되면서 아래의 onActivityResult함수를 호출해준다
-[소스코드 전체보기](https://github.com/javafa/3rd_ActivityControl/blob/master/app/src/main/java/com/veryworks/android/activitycontrol/MainActivity.java) {.alignright}
+이 함수로 Activity를 실행하면 실행된 Activity가 종료되면서 아래의 onActivityResult함수를 호출해준다. [> 소스코드 전체보기](https://github.com/javafa/3rd_ActivityControl/blob/master/app/src/main/java/com/veryworks/android/activitycontrol/MainActivity.java)
 ```java
 // 액티비티를 실행하는 버튼을 구분하기 위한 플래그
 final int BUTTON_START = 99;
